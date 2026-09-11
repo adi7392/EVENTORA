@@ -148,7 +148,8 @@ const events = [
 const seedDatabase = async () => {
   try {
     await mongoose.connect(
-      process.env.MONGO_URI || "mongodb://localhost:27017/eventora",
+      process.env.MONGO_URI ||
+        "mongodb+srv://aditya:aditya@mern.lwidnej.mongodb.net/eventoraDEV?appName=mern",
     );
     console.log("\n✅ MongoDB connection open...");
 
