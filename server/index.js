@@ -16,6 +16,7 @@ app.use(`/api/auth`, authRoutes);
 
 app.use(`/api/events`, eventRoutes);
 app.use(`/api/booking`, bookingRoutes);
+app.use(`/api/bookings`, bookingRoutes);
 
 mongoose
   .connect(process.env.MONGODB_URI)
